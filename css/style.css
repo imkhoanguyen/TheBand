@@ -1,0 +1,416 @@
+/* Header */
+
+.header {
+  height: 4.6rem;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+}
+
+.main-nav-list {
+  display: flex;
+  list-style: none;
+}
+
+/* Để cái icon arrow ở giữa chữ more */
+.main-nav-list li:last-child .main-nav-link {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1.2rem 2.4rem;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  background-color: #ccc;
+  color: #000;
+}
+
+/* Show sub nav khi hover (hover vô li mới đc ko hover được vào thẻ a) */
+.main-nav-list li:hover .sub-nav-list {
+  display: block;
+}
+
+.main-nav-list li {
+  position: relative;
+}
+
+.sub-nav-list {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  /* hay nha */
+  top: 100%;
+  list-style: none;
+  background-color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: none;
+  z-index: 1;
+}
+
+.sub-nav-link:link,
+.sub-nav-link:visited {
+  color: #000;
+  padding: 0.8rem 1.6rem 0.8rem 2.4rem;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  width: 16rem;
+
+}
+
+.sub-nav-link:active,
+.sub-nav-link:hover {
+  background-color: #ccc;
+}
+
+.icon-arrow-down {
+  font-size: 1.4rem;
+}
+
+.search {
+  margin-left: auto;
+  padding: 1.6rem 2.4rem;
+}
+
+.search:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+.icon-search {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #fff;
+}
+
+/* Section hero */
+.section-hero {
+  margin-top: 4.6rem;
+  height: calc(100vh - 4.6rem);
+  background: url('/img/chicago.jpg') top center / cover no-repeat;
+  position: relative;
+}
+
+.hero-content {
+  margin: 0 auto;
+  text-align: center;
+  padding: 3.2rem 1.6rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-content h3 {
+  color: #fff;
+  font-size: 2.4rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.hero-content p {
+  color: #fff;
+  font-weight: 700;
+}
+
+/* section introduce */
+
+.introduce-text {
+  margin: 1.5rem 0;
+  line-height: 22.5px;
+  /* hay nha */
+  text-align: justify;
+}
+
+.introduce-nembers {
+  align-self: center;
+  justify-self: center;
+}
+
+
+.introduce-name {
+  display: block;
+  font-size: 1.4rem;
+  margin: 1.4rem 0;
+}
+
+.introduce-img {
+  width: 15rem;
+  height: 15rem;
+}
+
+/* section tour */
+.section-tour {
+  background-color: #000;
+}
+
+.tour-heading,
+.tour-sub-heading {
+  color: #fff;
+}
+
+.tour-sub-heading {
+  margin-bottom: 4rem;
+}
+
+.tour-time-list {
+  background-color: #fff;
+  color: #757575;
+  list-style: none;
+  margin-top: 2rem;
+  display: block;
+}
+
+.tour-time-list li {
+  padding: 0.8rem 1.6rem;
+  border-bottom: 0.8px solid #ccc;
+}
+
+.tour-time-list span {
+  display: inline-block;
+  color: #fff;
+  margin-left: 1.6rem;
+  padding: 0 0.8rem;
+  background-color: #f44336;
+}
+
+.tour-time-list li:last-child {
+  display: flex;
+}
+
+.tour-time-list li:last-child span {
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: 1.6rem;
+}
+
+.tour-tickets {
+  gap: 1.6rem;
+}
+
+
+.ticket-content {
+  background-color: #fff;
+  padding: 1rem 1.6rem 1.6rem 1.6rem;
+}
+
+.ticket-img {
+  width: 100%;
+  /* hay nha */
+  vertical-align: middle;
+}
+
+.ticket-img:hover {
+  opacity: 0.6;
+}
+
+.ticket-img:hover .ticket {
+  background-color: #000;
+}
+
+/* ticket modal */
+.ticketModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -200%);
+  width: 90rem;
+  z-index: 6;
+  /* hay nha */
+  animation: animatetop 0.4s
+}
+
+.container-modal {
+  background-color: #fff;
+}
+
+.modal-header {
+  background-color: #429488;
+  padding: 3.2rem 1.6rem;
+  position: relative;
+}
+
+.icon--close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1.6rem 1.6rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #fff;
+}
+
+.icon--close:hover {
+  color: #000;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.heading-modal {
+  color: #fff;
+}
+
+.modal-container {
+  padding: 1.6rem;
+}
+
+.modal-label {
+  display: flex;
+  margin-bottom: 1.5rem;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.modal-container input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 0.5px solid #ccc;
+  margin-bottom: 2.5rem;
+  font-size: 1.5rem;
+}
+
+.btn--pay {
+  width: 100%;
+  padding: 1.6rem 0;
+  margin-bottom: 3.2rem;
+  background-color: #429488;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #fff;
+  gap: 0.3rem;
+}
+
+.icon-check {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.modal-footer {
+  display: flex;
+  align-items: center;
+}
+
+.btn--close {
+  background-color: #f44336;
+  display: flex;
+  align-items: flex-end;
+  gap: 0.1rem;
+}
+
+.btn-icon-close {
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-bottom: 0.1rem;
+}
+
+.modal-help {
+  margin-left: auto;
+}
+
+.modal-help a {
+  color: #2196F3;
+}
+
+/* Contact */
+
+.contact-sub-heading {
+  margin-bottom: 4.5rem;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.content-text {
+  font-size: 1.8rem;
+}
+
+.icon-contact {
+  margin-right: 1.8rem;
+}
+
+.contact-form input {
+  padding: 0.8rem;
+  width: 100%;
+  border: 0.8px solid #ccc;
+  font-size: 1.5rem;
+}
+
+.contact-info {
+  margin-bottom: 0.8rem;
+  display: flex;
+  gap: 1.6rem;
+}
+
+.contact-send {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn--send {
+  margin-top: 1.6rem;
+  text-transform: uppercase;
+}
+
+/* section map */
+.section-map {
+  background-image: url('/img/map.jpg');
+  width: 100%;
+  height: 85rem;
+}
+
+/* footer  */
+.footer {
+  padding: 6.4rem 1.6rem;
+}
+
+
+.footer-list-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 0.5rem;
+  opacity: 0.6;
+}
+
+.footer-list-icon li:hover {
+  opacity: 0.6;
+}
+
+.logo-footer {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.copyright {
+  margin-top: 1.5rem;
+
+}
+
+.link-copyright {
+  color: #000;
+}

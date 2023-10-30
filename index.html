@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>The Band</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="main-nav">
+      <ul class="main-nav-list">
+        <li><a href="#" class="main-nav-link">home</a></li>
+        <li><a href="#band" class="main-nav-link">band</a></li>
+        <li><a href="#tour" class="main-nav-link">tour</a></li>
+        <li><a href="#contact" class="main-nav-link">contact</a></li>
+        <li>
+          <a href="#" class="main-nav-link">
+            more
+            <ion-icon name="caret-down-outline" class="icon-arrow-down"></ion-icon>
+          </a>
+
+          <ul class="sub-nav-list">
+            <li><a href="#" class="sub-nav-link">Merchandise</a></li>
+            <li><a href="#" class="sub-nav-link">Extras</a></li>
+            <li><a href="#" class="sub-nav-link">Media</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <a class="search">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4" stroke="currentColor"
+        class="icon-search">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+      </svg>
+
+    </a>
+  </header>
+  <main>
+    <section class="section-hero">
+      <div class="hero-content">
+        <h3 class="hero-heading">Los Angeles</h3>
+        <p class="hero-description">We had the best time playing at Venice Beach!</p>
+      </div>
+    </section>
+    <section class="section-introduce" id="band">
+      <div class="container">
+        <div class="introduce-content-box">
+          <h2 class="heading-secondary center-text">THE BAND</h2>
+          <p class="sub-heading center-text">We love music</p>
+          <p class="introduce-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
+            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="introduce-img-box grid grid-3--cols">
+          <div class="introduce-nembers">
+            <p class="introduce-name center-text">Name</p>
+            <img src="./img/bandmember.jpg" alt="nember" class="introduce-img">
+          </div>
+          <div class="introduce-nembers">
+            <p class="introduce-name center-text">Name</p>
+            <img src="./img/bandmember.jpg" alt="nember" class="introduce-img">
+          </div>
+          <div class="introduce-nembers">
+            <p class="introduce-name center-text">Name</p>
+            <img src="./img/bandmember.jpg" alt="nember" class="introduce-img">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-tour" id="tour">
+      <div class="container">
+        <h2 class="heading-secondary tour-heading center-text">TOUR DATES</h2>
+        <p class="sub-heading center-text tour-sub-heading">Remember to book your tickets!</p>
+        <ul class="tour-time-list">
+          <li>
+            September
+            <span>Sold out</span>
+          </li>
+          <li>
+            October
+            <span>Sold out</span>
+          </li>
+          <li>
+            November
+            <span>3</span>
+          </li>
+        </ul>
+        <div class="tour-tickets grid grid-3--cols">
+          <div class="ticket">
+            <img src="./img/newyork.jpg" alt="newyork" class="ticket-img">
+            <div class="ticket-content">
+              <p class="ticket-name mb-15 fw700">New York</p>
+              <p class="ticket-time mb-15 opacity06">Fri 27 Nov 2016</p>
+              <p class="ticket-description mb-15">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+              <button class="btn btn--buy">Buy Tickets</button>
+            </div>
+          </div>
+          <div class="ticket">
+            <img src="./img/paris.jpg" alt="paris" class="ticket-img">
+            <div class="ticket-content">
+              <p class="ticket-name mb-15 fw700">Paris</p>
+              <p class="ticket-time mb-15 opacity06">Sat 28 Nov 2016</p>
+              <p class="ticket-description mb-15">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+              <button class="btn btn--buy">Buy Tickets</button>
+            </div>
+          </div>
+          <div class="ticket">
+            <img src="./img/sanfran.jpg" alt="sanfran" class="ticket-img">
+            <div class="ticket-content">
+              <p class="ticket-name mb-15 fw700">San Francisco</p>
+              <p class="ticket-time mb-15 opacity06">Sun 29 Nov 2016</p>
+              <p class="ticket-description mb-15">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+              <button class="btn btn--buy">Buy Tickets</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-contact" id="contact">
+      <div class="container">
+        <h2 class="heading-secondary center-text">CONTACT</h2>
+        <p class="sub-heading center-text contact-sub-heading">Fan? Drop a note!</p>
+        <div class="contact-container">
+          <div class="contact-content">
+            <div class="content-text">
+              <ion-icon name="location-sharp" class="icon-contact"></ion-icon>
+              Chicago, US
+            </div>
+            <div class="content-text">
+              <ion-icon name="call-sharp" class="icon-contact"></ion-icon>
+              Phone: +00 151515
+            </div>
+            <div class="content-text">
+              <ion-icon name="mail-sharp" class="icon-contact"></ion-icon>
+              Email: mail@mail.com
+            </div>
+          </div>
+          <form action="#" class="contact-form">
+            <div class="contact-info">
+              <input type="text" placeholder="Name" required>
+              <input type="email" placeholder="Email" required>
+            </div>
+            <input type="text" placeholder="Massage" id="massage" required>
+            <div class="contact-send">
+              <button class="btn btn--send">send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="section-map"></section>
+  </main>
+  <footer class="footer">
+    <ul class="footer-list-icon">
+      <li><ion-icon name="logo-facebook" class="logo-footer"></ion-icon></li>
+      <li><ion-icon name="logo-instagram" class="logo-footer"></ion-icon></li>
+      <li><ion-icon name="logo-snapchat" class="logo-footer"></ion-icon></li>
+      <li><ion-icon name="logo-pinterest" class="logo-footer"></ion-icon></li>
+      <li><ion-icon name="logo-twitter" class="logo-footer"></ion-icon></li>
+      <li><ion-icon name="logo-linkedin" class="logo-footer"></ion-icon></li>
+    </ul>
+    <p class="copyright opacity06 center-text">Powered by <a href="#" class="link-copyright">w3.css</a></p>
+  </footer>
+  <div class="ticketModal">
+    <div class="container-modal">
+      <div class="modal-header">
+        <h2 class="heading-secondary heading-modal center-text">
+          <ion-icon name="bag" class="modal-icon"></ion-icon>
+          Tickets
+        </h2>
+        <ion-icon name="close" class="icon-modal icon--close"></ion-icon>
+      </div>
+      <div class="modal-container">
+        <label for="pricing" class="modal-label">
+          <ion-icon name="cart" class="icon-modal"></ion-icon>
+          Tickets, $15 per person</label>
+        <input type="text" placeholder="How many?" id="pricing">
+        <label for="modal-email" class="modal-label">
+          <ion-icon name="person" class="icon-modal"></ion-icon>
+          Send To
+        </label>
+        <input type="text" placeholder="Enter email" id="modal-email">
+        <button class="btn btn--pay">pay
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4.5"
+            stroke="currentColor" class="icon-check">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+          </svg>
+
+        </button>
+        <div class="modal-footer">
+          <button class="btn btn--close">
+            Close
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4.5"
+              stroke="currentColor" class="btn-icon-close">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+          <p class="modal-help">Need <a href="#">help?</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay hidden"></div>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="/script.js"></script>
+</body>
+
+</html>
